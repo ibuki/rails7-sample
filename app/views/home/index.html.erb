@@ -1,2 +1,21 @@
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<%= text_area_tag :content, "Hello, World!", :class => "tinymce" %>
+<%= tinymce %>
+ <%# <script>
+   tinymce.init({
+     selector: '.tinymce',
+     height: 500,
+     menubar: false,
+     plugins: [
+       'advlist autolink lists link image charmap print preview anchor',
+       'searchreplace visualblocks code fullscreen',
+       'insertdatetime media table paste code help wordcount'
+     ],
+       toolbar: 'undo redo | formatselect | ' +
+       'bold italic backcolor | alignleft aligncenter ' +
+       'alignright alignjustify | bullist numlist outdent indent | ' +
+       ' removeformat | help'
+   });
+ </script> %>
